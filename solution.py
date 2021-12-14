@@ -13,19 +13,15 @@ songs_list = [
     'Co$Mo - I Want To Be Loved.',
 ]
 
-
-def rand_song():
-    new_list = []
-    while len(songs_list) != 0:
-        input("Enter your choice:")
-        current_song = random.choice(songs_list)
-        new_list.append(current_song)
-        print(current_song)
-        songs_list.remove(current_song)
-        if len(songs_list) == 0:
-            songs_list = new_list[:]
+new_list = []
+while songs_list:
+    input("Enter your choice:")
+    current_song = random.choice(songs_list)
+    new_list.append(current_song)
+    print(current_song)
+    songs_list.remove(current_song)
+    if len(songs_list) == 0:
+        songs_list = new_list[:]
 
 
 
-
-rand_song()
