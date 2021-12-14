@@ -13,6 +13,7 @@ songs_list = [
     'Co$Mo - I Want To Be Loved.',
 ]
 
+
 new_list = []
 while songs_list:
     input("Enter your choice:")
