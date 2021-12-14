@@ -12,5 +12,7 @@ def test_return():
     print("test return ended")
 
 
-test_yield()
-test_return()
+yield_value = test_yield()
+return_value = test_return()
+print(list(yield_value))
+print(return_value)
