@@ -22,6 +22,8 @@ while songs_list:
     songs_list.remove(current_song)
     if len(songs_list) == 0:
         songs_list = new_list[:]
+        new_list.clear()
+
 
 
 
